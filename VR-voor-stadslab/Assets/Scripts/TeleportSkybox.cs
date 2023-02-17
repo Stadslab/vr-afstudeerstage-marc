@@ -11,7 +11,7 @@ public class TeleportSkybox : MonoBehaviour
     {
         if (xrOrigin != null)
         {
-            this.gameObject.transform.position = xrOrigin.transform.position;
+            this.gameObject.transform.position = new Vector3(xrOrigin.transform.position.x, this.transform.position.y, xrOrigin.transform.position.z);
         }
     }
 }
