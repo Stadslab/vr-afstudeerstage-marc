@@ -155,10 +155,10 @@ MonoBehaviour:
   _originAuthority: 0
   _latitude: 51.9179367
   _longitude: 4.4878378
-  _height: 100
-  _ecefX: 3930126.405572019
-  _ecefY: 308468.25321883376
-  _ecefZ: 4997255.362725315
+  _height: 200
+  _ecefX: 3930187.895411391
+  _ecefY: 308473.0794410425
+  _ecefZ: 4997334.075540239
 --- !u!4 &165982551
 Transform:
   m_ObjectHideFlags: 0
@@ -172,11 +172,11 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 933907982}
-  - {fileID: 170032816}
+  - {fileID: 222579500}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &170032815
+--- !u!1 &222579499
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -184,9 +184,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 170032816}
-  - component: {fileID: 170032818}
-  - component: {fileID: 170032817}
+  - component: {fileID: 222579500}
+  - component: {fileID: 222579502}
+  - component: {fileID: 222579501}
   m_Layer: 0
   m_Name: Cesium OSM Buildings
   m_TagString: Untagged
@@ -194,13 +194,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &170032816
+--- !u!4 &222579500
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 170032815}
+  m_GameObject: {fileID: 222579499}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -209,25 +209,25 @@ Transform:
   m_Father: {fileID: 165982551}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &170032817
+--- !u!114 &222579501
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 170032815}
+  m_GameObject: {fileID: 222579499}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7b1942b8938da484cab4fe52e17a3cc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &170032818
+--- !u!114 &222579502
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 170032815}
+  m_GameObject: {fileID: 222579499}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 844ac86b07dcfa3468f56da55d787510, type: 3}
@@ -347,7 +347,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 0
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -616,6 +616,7 @@ GameObject:
   - component: {fileID: 1345060834}
   - component: {fileID: 1345060833}
   - component: {fileID: 1345060837}
+  - component: {fileID: 1345060838}
   m_Layer: 31
   m_Name: Ground
   m_TagString: Untagged
@@ -656,7 +657,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5a43cf376ecd4aa4b84ca51d3d7533df, type: 2}
+  - {fileID: 2100000, guid: 177bae5937d67c44696c52cef92b0765, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -792,6 +793,19 @@ MonoBehaviour:
   m_Teleporting:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1345060838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1345060832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76a28b2e3b07a3b4db4b1e406f4cd127, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xrOrigin: {fileID: 2028046002695590495}
 --- !u!20 &1555653889 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 2028046003963901791, guid: 32351ef29d133b649a0772a3bb096fa8,
@@ -942,6 +956,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 32351ef29d133b649a0772a3bb096fa8, type: 3}
+--- !u!1 &2028046002695590495 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2028046003168572610, guid: 32351ef29d133b649a0772a3bb096fa8,
+    type: 3}
+  m_PrefabInstance: {fileID: 2028046002695590494}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4122154048725044429
 PrefabInstance:
   m_ObjectHideFlags: 0
