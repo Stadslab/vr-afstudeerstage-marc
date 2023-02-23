@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SC_StartHub.unity
     guid: 7c5c0989217ccdc4681e4169c6ba9fcd
+  - enabled: 1
+    path: Assets/Scenes/SC_Skybox.unity
+    guid: 5e1642d89bc0dcf42b471a144fa8c8d0
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: aa75b79a2cf09c24aa65c6bf85220406,
       type: 2}
