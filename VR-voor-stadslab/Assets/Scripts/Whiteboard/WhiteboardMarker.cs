@@ -21,7 +21,6 @@ public class WhiteboardMarker : MonoBehaviour
     private bool _touchedLastFrame;
     private Quaternion _lastTouchedRotation;
 
-
     void Start()
     {
         _renderer = tip.GetComponent<Renderer>();
@@ -31,7 +30,29 @@ public class WhiteboardMarker : MonoBehaviour
 
     void Update()
     {
+        SelectColor();
         Draw();
+    }
+
+    private void SelectColor()
+    {
+        if (Physics.Raycast(tip.position, transform.up, out _touch, _tipHeight))
+        {
+            if (_touch.transform.CompareTag("Color Picker"))
+            {
+                var tex = _touch.transform.gameObject.GetComponent<Renderer>().material.mainTexture as Texture2D;
+
+                Vector2 pos = new Vector2(_touch.textureCoord.x, _touch.textureCoord.y);
+
+                var x = (int)(pos.x * tex.width - penSize/2);
+                var y = (int)(pos.y * tex.height - penSize/2);
+
+                _renderer.material.color = tex.GetPixel(x, y);
+                _colors = Enumerable.Repeat(_renderer.material.color, penSize * penSize).ToArray();
+            }
+
+        }
+
     }
 
     private void Draw()
