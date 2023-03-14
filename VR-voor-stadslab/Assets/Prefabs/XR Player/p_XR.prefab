@@ -2160,7 +2160,6 @@ GameObject:
   - component: {fileID: 2028046003168572609}
   - component: {fileID: 2028046003168572608}
   - component: {fileID: 2028046003168572611}
-  - component: {fileID: 7221715845707188604}
   m_Layer: 0
   m_Name: XR Origin
   m_TagString: Untagged
@@ -2215,20 +2214,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ActionAssets:
   - {fileID: -944628639613478452, guid: c348712bda248c246b8c49b3db54643f, type: 3}
---- !u!136 &7221715845707188604
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2028046003168572610}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  m_Radius: 0.3
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0.5, z: 0}
 --- !u!1 &2028046003507867770
 GameObject:
   m_ObjectHideFlags: 0
