@@ -19,7 +19,7 @@ public class WhiteboardMarker : MonoBehaviour
     private Whiteboard _whiteboard;
     private Vector2 _touchPosition, _lastTouchedPosition;
     private bool _touchedLastFrame;
-    private Quaternion _lastTouchedRotation;
+    // private Quaternion _lastTouchedRotation;
 
     void Start()
     {
@@ -84,13 +84,13 @@ public class WhiteboardMarker : MonoBehaviour
                         _whiteboard.texture.SetPixels(lerpX, lerpY, penSize, penSize, _colors);
                     }
 
-                    transform.rotation = _lastTouchedRotation;
+                    // transform.rotation = _lastTouchedRotation;
 
                     _whiteboard.texture.Apply();
                 }
 
                 _lastTouchedPosition = new Vector2(x, y);
-                _lastTouchedRotation = transform.rotation;
+                // _lastTouchedRotation = transform.rotation;
                 _touchedLastFrame = true;
                 return;
             }
