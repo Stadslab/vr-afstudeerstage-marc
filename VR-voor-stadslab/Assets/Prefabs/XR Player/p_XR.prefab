@@ -54,7 +54,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 2
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 2028046003963901791}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -481,11 +481,11 @@ MonoBehaviour:
     m_Interactions: 
     m_SingletonActionBindings:
     - m_Name: 
-      m_Id: 00b83e50-3860-4a8b-a273-2524fc72efa4
-      m_Path: <XRController>{RightHand}/primaryButton
-      m_Interactions: 
+      m_Id: 7cc950e8-888b-444f-9d3d-65fe18287b1e
+      m_Path: <XRController>{RightHand}/Primary2DAxis
+      m_Interactions: Sector(directions=1)
       m_Processors: 
-      m_Groups: 
+      m_Groups: Generic XR Controller
       m_Action: Action
       m_Flags: 0
     m_Flags: 0
@@ -592,7 +592,6 @@ GameObject:
   - component: {fileID: 2028046002199165421}
   - component: {fileID: 2028046002199165420}
   - component: {fileID: 2028046002199165423}
-  - component: {fileID: 5763424966617219570}
   m_Layer: 0
   m_Name: Locomotion System
   m_TagString: Untagged
@@ -687,51 +686,6 @@ MonoBehaviour:
       m_Flags: 0
     m_Reference: {fileID: -6493913391331992944, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
---- !u!114 &5763424966617219570
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2028046002199165422}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0bf296fc962d7184ab14ad1841598d5f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_System: {fileID: 2028046002199165421}
-  m_MoveSpeed: 1
-  m_EnableStrafe: 1
-  m_EnableFly: 0
-  m_UseGravity: 1
-  m_GravityApplicationMode: 0
-  m_ForwardSource: {fileID: 2028046003963901600}
-  m_LeftHandMoveAction:
-    m_UseReference: 1
-    m_Action:
-      m_Name: Left Hand Move
-      m_Type: 0
-      m_ExpectedControlType: 
-      m_Id: d477ab0f-e296-4215-9d25-3ed92850181c
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings: []
-      m_Flags: 0
-    m_Reference: {fileID: 6972639530819350904, guid: c348712bda248c246b8c49b3db54643f,
-      type: 3}
-  m_RightHandMoveAction:
-    m_UseReference: 1
-    m_Action:
-      m_Name: Right Hand Move
-      m_Type: 0
-      m_ExpectedControlType: 
-      m_Id: 67249e67-1592-4673-9d3a-5d501375b1ee
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings: []
-      m_Flags: 0
-    m_Reference: {fileID: -8198699208435500284, guid: c348712bda248c246b8c49b3db54643f,
-      type: 3}
 --- !u!1 &2028046002294493950
 GameObject:
   m_ObjectHideFlags: 0
@@ -746,7 +700,7 @@ GameObject:
   - component: {fileID: 2028046002294493946}
   - component: {fileID: 2028046002294493949}
   - component: {fileID: 2028046002294493948}
-  - component: {fileID: 5516359506834076719}
+  - component: {fileID: 4678783338316770879}
   m_Layer: 0
   m_Name: LeftHand Ray
   m_TagString: Untagged
@@ -1327,7 +1281,7 @@ SortingGroup:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
---- !u!114 &5516359506834076719
+--- !u!114 &4678783338316770879
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2916,18 +2870,18 @@ MonoBehaviour:
     m_Interactions: 
     m_SingletonActionBindings:
     - m_Name: 
-      m_Id: fa524511-a600-4043-aed4-e2681588695d
-      m_Path: <XRController>{LeftHand}/primaryButton
-      m_Interactions: 
+      m_Id: b1017a6e-ffb3-4b4b-83a1-aa9d29cfc79c
+      m_Path: <XRController>{LeftHand}/Primary2DAxis
+      m_Interactions: Sector(directions=1)
       m_Processors: 
-      m_Groups: 
+      m_Groups: Noncontinuous Move
       m_Action: Action
       m_Flags: 0
     m_Flags: 0
   OnPress:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5516359506834076719}
+      - m_Target: {fileID: 4678783338316770879}
         m_TargetAssemblyTypeName: ToggleRay, Assembly-CSharp
         m_MethodName: ActivateRay
         m_Mode: 1
@@ -2942,7 +2896,7 @@ MonoBehaviour:
   OnRelease:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5516359506834076719}
+      - m_Target: {fileID: 4678783338316770879}
         m_TargetAssemblyTypeName: ToggleRay, Assembly-CSharp
         m_MethodName: DeactiveRay
         m_Mode: 1
