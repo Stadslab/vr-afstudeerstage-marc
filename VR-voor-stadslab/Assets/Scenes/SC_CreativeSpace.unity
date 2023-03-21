@@ -3929,7 +3929,7 @@ PrefabInstance:
     - target: {fileID: 240187412651599926, guid: 32351ef29d133b649a0772a3bb096fa8,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.713172
+      value: 10.104
       objectReference: {fileID: 0}
     - target: {fileID: 240187412651599926, guid: 32351ef29d133b649a0772a3bb096fa8,
         type: 3}
@@ -4197,7 +4197,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Touch the tip of the marker on the color picker to change the color.
+  m_text: Raak een kleurenvak aan met de bovenkant van de marker om deze van kleur
+    te veranderen.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

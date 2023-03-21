@@ -19,7 +19,7 @@ public class WhiteboardMarker : MonoBehaviour
     private Whiteboard _whiteboard;
     private Vector2 _touchPosition, _lastTouchedPosition;
     private bool _touchedLastFrame;
-    // private Quaternion _lastTouchedRotation;
+    private Quaternion _lastTouchedRotation;
 
     void Start()
     {
@@ -77,20 +77,20 @@ public class WhiteboardMarker : MonoBehaviour
                 {
                     _whiteboard.texture.SetPixels(x, y, penSize, penSize, _colors);
 
-                    for (float f = 0.01f; f < 1.00f; f += 0.01f)
+                    for (float f = 0.01f; f < 1.00f; f += 0.08f)
                     {
                         var lerpX = (int)Mathf.Lerp(_lastTouchedPosition.x, x, f);
                         var lerpY = (int)Mathf.Lerp(_lastTouchedPosition.y, y, f);
                         _whiteboard.texture.SetPixels(lerpX, lerpY, penSize, penSize, _colors);
                     }
 
-                    // transform.rotation = _lastTouchedRotation;
+                    transform.rotation = _lastTouchedRotation;
 
                     _whiteboard.texture.Apply();
                 }
 
                 _lastTouchedPosition = new Vector2(x, y);
-                // _lastTouchedRotation = transform.rotation;
+                _lastTouchedRotation = transform.rotation;
                 _touchedLastFrame = true;
                 return;
             }
