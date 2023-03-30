@@ -4596,6 +4596,11 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 3552170452146096960, guid: 95a6a741ffe11cc448a4639d17db30f8,
+        type: 3}
+      propertyPath: m_text
+      value: CMI Demo
+      objectReference: {fileID: 0}
     - target: {fileID: 3581387156596542967, guid: 95a6a741ffe11cc448a4639d17db30f8,
         type: 3}
       propertyPath: m_Mesh
@@ -4605,6 +4610,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Preview Level (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3826198538487729831, guid: 95a6a741ffe11cc448a4639d17db30f8,
+        type: 3}
+      propertyPath: onPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: SC_Skybox
       objectReference: {fileID: 0}
     - target: {fileID: 4982689273989279179, guid: 95a6a741ffe11cc448a4639d17db30f8,
         type: 3}
@@ -4790,6 +4800,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Preview Level (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3826198538487729831, guid: 95a6a741ffe11cc448a4639d17db30f8,
+        type: 3}
+      propertyPath: onPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: SC_CreativeSpace
       objectReference: {fileID: 0}
     - target: {fileID: 4982689273989279179, guid: 95a6a741ffe11cc448a4639d17db30f8,
         type: 3}
