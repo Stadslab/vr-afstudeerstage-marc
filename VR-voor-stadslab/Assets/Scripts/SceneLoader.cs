@@ -6,9 +6,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class SceneLoader : MonoBehaviour
 {
-    public int sceneNumber = 0;
-
-    public void LoadScene() {
-        SceneManager.LoadScene(sceneNumber);
+    public void LoadScene(string sceneName) {
+        SceneManager.LoadScene(sceneName);
     }
 }
