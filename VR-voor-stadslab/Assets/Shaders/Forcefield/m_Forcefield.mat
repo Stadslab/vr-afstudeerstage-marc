@@ -60,12 +60,12 @@ Material:
     - _DstBlend: 10
     - _Fill: 0.24
     - _Fresnel_Power: 0.6
-    - _Hex_Scale: 0.9
+    - _Hex_Scale: 0.8
     - _Offset: 0.35
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 0
-    - _Scroll_Speed: 0.5
+    - _Scroll_Speed: 0.3
     - _Smoothness: 0
     - _SrcBlend: 5
     - _Surface: 1
@@ -75,5 +75,5 @@ Material:
     - _ZWriteControl: 0
     m_Colors:
     - _Emmision: {r: 0.20784314, g: 0.015686275, b: 0.07450981, a: 1}
-    - _Hex_Tiling: {r: 1, g: 1, b: 0, a: 0}
+    - _Hex_Tiling: {r: 0.3, g: 0.3, b: 0, a: 0}
   m_BuildTextureStacks: []
