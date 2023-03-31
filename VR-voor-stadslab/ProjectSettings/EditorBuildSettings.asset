@@ -15,8 +15,14 @@ EditorBuildSettings:
     path: Assets/Scenes/SC_Skybox.unity
     guid: 5e1642d89bc0dcf42b471a144fa8c8d0
   - enabled: 1
-    path: Assets/Scenes/SC_CreativeSpace.unity
+    path: Assets/Scenes/SC_Whiteboard.unity
     guid: c34e296fc45065341845e25336b15ddc
+  - enabled: 1
+    path: Assets/Scenes/SC_ARDemo.unity
+    guid: 75b9d723f6e14024595308c4eff3f6ba
+  - enabled: 1
+    path: Assets/Scenes/SC_Slicing.unity
+    guid: e146ced749a1d9441b39f2aa508e268d
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: aa75b79a2cf09c24aa65c6bf85220406,
       type: 2}
