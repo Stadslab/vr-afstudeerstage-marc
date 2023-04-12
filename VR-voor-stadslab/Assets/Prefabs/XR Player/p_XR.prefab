@@ -396,6 +396,14 @@ MonoBehaviour:
       m_Groups: Generic XR Controller
       m_Action: Action
       m_Flags: 0
+    - m_Name: 
+      m_Id: 87c5e2ba-0195-497f-aa68-a8ba81d735cb
+      m_Path: <XRController>{RightHand}/primaryButton
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Action
+      m_Flags: 0
     m_Flags: 0
   OnPress:
     m_PersistentCalls:
@@ -415,6 +423,18 @@ MonoBehaviour:
   OnRelease:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1930923633538722387}
+        m_TargetAssemblyTypeName: TeleportUser, Assembly-CSharp
+        m_MethodName: Teleport
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 6050525460740855910}
         m_TargetAssemblyTypeName: ToggleRay, Assembly-CSharp
         m_MethodName: DeactiveRay
@@ -668,6 +688,7 @@ GameObject:
   - component: {fileID: 2028046002294493949}
   - component: {fileID: 2028046002294493948}
   - component: {fileID: 4678783338316770879}
+  - component: {fileID: 4525095010474582010}
   m_Layer: 0
   m_Name: LeftHand Ray
   m_TagString: Untagged
@@ -1262,6 +1283,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceToggle: 0
   directInteractor: {fileID: 2028046004115988809}
+--- !u!114 &4525095010474582010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2028046002294493950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56a561c1ce003a4488388767fc63630b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rayInteractor: {fileID: 2028046002294493947}
+  TeleportationProvider: {fileID: 2028046002199165420}
 --- !u!1 &2028046002347239852
 GameObject:
   m_ObjectHideFlags: 0
@@ -1277,6 +1312,7 @@ GameObject:
   - component: {fileID: 2028046002347239848}
   - component: {fileID: 2028046002347239851}
   - component: {fileID: 6050525460740855910}
+  - component: {fileID: 1930923633538722387}
   m_Layer: 0
   m_Name: RightHand Ray
   m_TagString: Untagged
@@ -1871,6 +1907,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceToggle: 0
   directInteractor: {fileID: 2028046001981732602}
+--- !u!114 &1930923633538722387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2028046002347239852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56a561c1ce003a4488388767fc63630b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rayInteractor: {fileID: 2028046002347239846}
+  TeleportationProvider: {fileID: 2028046002199165420}
 --- !u!1 &2028046002712528225
 GameObject:
   m_ObjectHideFlags: 0
@@ -2846,6 +2896,14 @@ MonoBehaviour:
       m_Groups: Noncontinuous Move
       m_Action: Action
       m_Flags: 0
+    - m_Name: 
+      m_Id: 733b8e43-6f4b-4033-9bd1-af4e61195ed2
+      m_Path: <XRController>{LeftHand}/primaryButton
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Action
+      m_Flags: 0
     m_Flags: 0
   OnPress:
     m_PersistentCalls:
@@ -2865,6 +2923,18 @@ MonoBehaviour:
   OnRelease:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 4525095010474582010}
+        m_TargetAssemblyTypeName: TeleportUser, Assembly-CSharp
+        m_MethodName: Teleport
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 4678783338316770879}
         m_TargetAssemblyTypeName: ToggleRay, Assembly-CSharp
         m_MethodName: DeactiveRay

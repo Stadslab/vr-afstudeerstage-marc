@@ -36202,7 +36202,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_PolyMesh:
-    name: pb_Mesh122410
+    name: pb_Mesh130828
     vertices:
     - {x: 50.02027, y: 1.6707813, z: -0.0669422}
     - {x: 43.71066, y: 0.8324118, z: -0.047815856}
