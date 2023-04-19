@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: m_Floor
+  m_Name: m_Floor_black
   m_Shader: {fileID: -6465566751694194690, guid: a020cac6ba6b77146b41a7261e7b51df,
     type: 3}
   m_ValidKeywords: []
@@ -58,8 +58,8 @@ Material:
     - _ZWriteControl: 0
     m_Colors:
     - _Color: {r: 0.18867922, g: 0.18867922, b: 0.18867922, a: 0}
-    - _Color_A: {r: 0.54509807, g: 0.49803925, b: 0.42352945, a: 1}
-    - _Color_B: {r: 0.7803922, g: 0.7254902, b: 0.62352943, a: 0}
+    - _Color_A: {r: 0.26415092, g: 0.26415092, b: 0.26415092, a: 1}
+    - _Color_B: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 0}
     - _Offset: {r: 2, g: 2, b: 0, a: 0}
     - _Tiling: {r: 1, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []
