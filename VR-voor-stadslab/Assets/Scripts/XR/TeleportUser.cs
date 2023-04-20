@@ -24,9 +24,9 @@ public class TeleportUser : MonoBehaviour
         {
             if (rayInteractor.TryGetCurrent3DRaycastHit(out hit))
             {
-                if (hit.transform.GetComponent<TeleportationArea>())
+                if (hit.transform.TryGetComponent<TeleportationArea>(out TeleportationArea teleportationArea))
                 {
-                    TeleportationArea area = hit.transform.GetComponent<TeleportationArea>();
+                    // TeleportationArea area = hit.transform.GetComponent<TeleportationArea>();
                     Vector3 destinationPosition = hit.point;
                     TeleportRequest request = new TeleportRequest()
                     {
