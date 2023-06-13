@@ -356,16 +356,16 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Joysticks naar voren voor interactie lasers. Onderste knop (grip trigger)
-    voor het teleporteren. Bovenste knop (pinch trigger) voor het aan klikken van
-    knoppen.
+  m_text: 'Joysticks naar voren voor interactie lasers. Richt lasers op de grond
+    en laat los om te teleporteren. Bovenste knop (pinch trigger) voor het aan klikken
+    van knoppen.
 
 
     De B knop op de controller is voor het opbrengen van het menu.
 
 
     De
-    grip trigger kan je ook gebruiken zonder laser om objecten op te pakken'
+    onderste knop (grip trigger) voor het oppakken van objecten.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
